@@ -17,8 +17,20 @@ class _HomeState extends State<Home> {
         children: [
           Row(
             children: [
-              CircleAvatar(),
-              RichText(text: )
+              const CircleAvatar(),
+              RichText(
+                text: const TextSpan(
+                  text: 'Hello, Aaron',
+                  style: ,
+                  children: [
+                    TextSpan(
+                      text: '\nWelcome ',
+                      // style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    TextSpan(text: 'Back'),
+                  ],
+                ),
+              )
             ],
           )
         ],
