@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -322,9 +324,9 @@ class _HomeState extends State<Home> {
                             width: 180,
                             height: 200,
                             decoration: const BoxDecoration(
-                              color: Colors.white,
+                              color: Colors.black,
                               border: Border(
-                                top: BorderSide(color: Colors.black),
+                                top: BorderSide(color: Colors.white),
                               ),
                             ),
                           ),
