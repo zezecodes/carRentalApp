@@ -320,15 +320,25 @@ class _HomeState extends State<Home> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Container(
-                            width: 180,
-                            height: 200,
-                            decoration: const BoxDecoration(
-                              color: Colors.black,
-                              border: Border(
-                                top: BorderSide(color: Colors.white),
+                          Stack(
+                            children: [
+                              Container(
+                                width: 180,
+                                height: 200,
+                                decoration: const BoxDecoration(
+                                  color: Colors.black,
+                                  border: Border(
+                                    top: BorderSide(color: Colors.white),
+                                  ),
+                                ),
+                                BackdropFilter(),
+                                child: Image.asset(
+                                  'assets/images/m5.png',
+                                  width: 280,
+                                  height: 280,
+                                ),
                               ),
-                            ),
+                            ],
                           ),
                           Container(
                             width: 180,
@@ -343,11 +353,7 @@ class _HomeState extends State<Home> {
                             ),
                             child: Stack(
                               children: [
-                                Column(
-                                  children: [
-                                    Image.asset('assets/images/m5.png')
-                                  ],
-                                ),
+                                Image.asset('assets/images/m5.png'),
                               ],
                             ),
                           )
