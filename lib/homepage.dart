@@ -11,14 +11,16 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[400],
       appBar: AppBar(
-        leading: CircleAvatar(),
-        title: Column(
+        backgroundColor: Colors.grey[400],
+        leading: const CircleAvatar(),
+        title: const Column(
           children: [Text('data'), Text('data')],
         ),
         actions: [
           IconButton.filledTonal(
-              onPressed: () {}, icon: Icon(Icons.notifications))
+              onPressed: () {}, icon: const Icon(Icons.notifications))
         ],
       ),
     );
