@@ -52,20 +52,19 @@ class _HomeState extends State<Home> {
                 )
               ],
             ),
-            SearchAnchor.bar(
-              suggestionsBuilder:
-                  (BuildContext context, SearchController controller) {
-                return List<Widget>.generate(
-                  5,
-                  (int index) {
-                    return ListTile(
-                      titleAlignment: ListTileTitleAlignment.center,
-                      title: Text('Initial list item $index'),
-                    );
-                  },
-                );
-              },
-            ),
+            SearchBar(
+              backgroundColor: Colors.grey[900],
+              hintText: 'Search',
+              leading: const Icon(Icons.search),
+              trailing: [
+                const VerticalDivider(),
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.filter_list_outlined,
+                    ))
+              ],
+            )
           ],
         ),
       ),
