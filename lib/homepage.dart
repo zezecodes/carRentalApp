@@ -315,9 +315,28 @@ class _HomeState extends State<Home> {
                           ],
                         ),
                       ),
-                      Row(),
-                      Row(),
-                      Row()
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            width: 180,
+                            height: 200,
+                            decoration: const BoxDecoration(
+                              color: Colors.white,
+                              border: Border(
+                                top: BorderSide(color: Colors.black),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: 180,
+                            height: 200,
+                            color: Colors.blue,
+                          )
+                        ],
+                      ),
+                      const Row(),
+                      const Row()
                     ],
                   ),
                 )
