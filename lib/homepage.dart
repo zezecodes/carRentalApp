@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.grey[700],
         body: SafeArea(
           child: SingleChildScrollView(
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             child: Column(
               children: [
                 Row(
@@ -199,7 +199,7 @@ class _HomeState extends State<Home> {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 15,
                               ),
                               Container(
@@ -215,7 +215,7 @@ class _HomeState extends State<Home> {
                                       height: 50,
                                     ),
                                   )),
-                              SizedBox(
+                              const SizedBox(
                                 width: 15,
                               ),
                               Container(
@@ -232,7 +232,7 @@ class _HomeState extends State<Home> {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 15,
                               ),
                               Container(
@@ -249,7 +249,7 @@ class _HomeState extends State<Home> {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 15,
                               ),
                               Container(
@@ -276,8 +276,8 @@ class _HomeState extends State<Home> {
                   width: 410,
                   height: 400,
                   decoration: BoxDecoration(
-                      color: Colors.grey[900],
-                      boxShadow: [
+                      color: Colors.grey[800],
+                      boxShadow: const [
                         BoxShadow(
                             color: Colors.grey,
                             blurRadius: 1,
@@ -285,6 +285,41 @@ class _HomeState extends State<Home> {
                             blurStyle: BlurStyle.normal)
                       ],
                       borderRadius: BorderRadius.circular(15)),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            const Text(
+                              'Most Popular Cars',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            ElevatedButton(
+                              style: ButtonStyle(
+                                  backgroundColor: MaterialStatePropertyAll(
+                                      Colors.grey[800]),
+                                  side: const MaterialStatePropertyAll(
+                                      BorderSide(color: Colors.yellow))),
+                              onPressed: () {},
+                              child: const Text(
+                                'See all',
+                                style: TextStyle(color: Colors.yellow),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Row(),
+                      Row(),
+                      Row()
+                    ],
+                  ),
                 )
               ],
             ),
