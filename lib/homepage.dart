@@ -272,11 +272,14 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
-                // Container(
-                //   width: 410,
-                //   height: 400,
-                //   color: Colors.amber,
-                // )
+                Container(
+                  width: 410,
+                  height: 400,
+                  decoration: BoxDecoration(
+                      color: Colors.grey[900],
+                      boxShadow: [BoxShadow(color: Colors.grey, blurRadius: 2)],
+                      borderRadius: BorderRadius.circular(15)),
+                )
               ],
             ),
           ),
