@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -11,18 +12,20 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[400],
+      backgroundColor: Colors.grey[600],
       body: SafeArea(
           child: Column(
         children: [
           Row(
             children: [
-              const CircleAvatar(),
+              const CircleAvatar(
+                radius: 40,
+              ),
               RichText(
-                text: const TextSpan(
+                text: TextSpan(
                   text: 'Hello, Aaron',
-                  style: ,
-                  children: [
+                  style: GoogleFonts.openSans(fontSize: 20),
+                  children: const [
                     TextSpan(
                       text: '\nWelcome ',
                       // style: TextStyle(fontWeight: FontWeight.bold),
@@ -30,7 +33,11 @@ class _HomeState extends State<Home> {
                     TextSpan(text: 'Back'),
                   ],
                 ),
-              )
+              ),
+              IconButton.outlined(
+                  iconSize: 40,
+                  onPressed: () {},
+                  icon: const Icon(Icons.notifications))
             ],
           )
         ],
