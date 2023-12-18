@@ -305,7 +305,7 @@ class _HomeState extends State<Home> {
                             ElevatedButton(
                               style: ButtonStyle(
                                   backgroundColor: MaterialStatePropertyAll(
-                                      Colors.grey[800]),
+                                      const Color.fromRGBO(66, 66, 66, 1)),
                                   side: const MaterialStatePropertyAll(
                                       BorderSide(color: Colors.yellow))),
                               onPressed: () {},
@@ -318,7 +318,7 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Container(
                             width: 180,
@@ -336,8 +336,19 @@ class _HomeState extends State<Home> {
                             decoration: const BoxDecoration(
                               color: Colors.blue,
                               border: Border(
-                                top: BorderSide(color: Colors.black),
+                                top: BorderSide(
+                                    color: Color.fromRGBO(66, 66, 66, 1),
+                                    width: 30),
                               ),
+                            ),
+                            child: Stack(
+                              children: [
+                                Column(
+                                  children: [
+                                    Image.asset('assets/images/m5.png')
+                                  ],
+                                ),
+                              ],
                             ),
                           )
                         ],
