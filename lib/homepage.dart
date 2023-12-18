@@ -12,8 +12,14 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Title'),
-        elevation: 4,
+        leading: CircleAvatar(),
+        title: Column(
+          children: [Text('data'), Text('data')],
+        ),
+        actions: [
+          IconButton.filledTonal(
+              onPressed: () {}, icon: Icon(Icons.notifications))
+        ],
       ),
     );
   }
