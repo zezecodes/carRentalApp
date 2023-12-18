@@ -14,11 +14,9 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.grey[800],
       body: SafeArea(
-          child: Column(
-        children: [
-          SizedBox(
-            width: MediaQuery.of(context).size.width * 1,
-            child: Row(
+        child: Column(
+          children: [
+            Row(
               children: [
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 10),
@@ -38,12 +36,12 @@ class _HomeState extends State<Home> {
                     ),
                     Text(
                       'Welcome Back',
-                      style: TextStyle(fontSize: 18, color: Colors.white),
+                      style: TextStyle(fontSize: 15, color: Colors.white),
                     ),
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 120),
+                  padding: const EdgeInsets.only(left: 140),
                   child: IconButton.outlined(
                       iconSize: 30,
                       onPressed: () {},
@@ -53,10 +51,10 @@ class _HomeState extends State<Home> {
                       )),
                 )
               ],
-            ),
-          )
-        ],
-      )),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
