@@ -31,15 +31,21 @@ class _HomeState extends State<Home> {
                   children: [
                     Text(
                       'Hello, Aaron',
-                      style: TextStyle(fontSize: 20),
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.yellow,
+                          fontWeight: FontWeight.bold),
                     ),
-                    Text('Welcome Back')
+                    Text(
+                      'Welcome Back',
+                      style: TextStyle(fontSize: 18, color: Colors.white),
+                    ),
                   ],
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 120),
                   child: IconButton.outlined(
-                      iconSize: 40,
+                      iconSize: 30,
                       onPressed: () {},
                       icon: const Icon(
                         Icons.notifications,
