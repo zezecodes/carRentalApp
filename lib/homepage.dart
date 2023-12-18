@@ -331,7 +331,12 @@ class _HomeState extends State<Home> {
                           Container(
                             width: 180,
                             height: 200,
-                            color: Colors.blue,
+                            decoration: const BoxDecoration(
+                              color: Colors.blue,
+                              border: Border(
+                                top: BorderSide(color: Colors.black),
+                              ),
+                            ),
                           )
                         ],
                       ),
