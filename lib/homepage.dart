@@ -12,33 +12,42 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[600],
+      backgroundColor: Colors.grey[800],
       body: SafeArea(
           child: Column(
         children: [
-          Row(
-            children: [
-              const CircleAvatar(
-                radius: 40,
-              ),
-              RichText(
-                text: TextSpan(
-                  text: 'Hello, Aaron',
-                  style: GoogleFonts.openSans(fontSize: 20),
-                  children: const [
-                    TextSpan(
-                      text: '\nWelcome ',
-                      // style: TextStyle(fontWeight: FontWeight.bold),
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 1,
+            child: Row(
+              children: [
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  child: CircleAvatar(
+                    radius: 40,
+                  ),
+                ),
+                const Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Hello, Aaron',
+                      style: TextStyle(fontSize: 20),
                     ),
-                    TextSpan(text: 'Back'),
+                    Text('Welcome Back')
                   ],
                 ),
-              ),
-              IconButton.outlined(
-                  iconSize: 40,
-                  onPressed: () {},
-                  icon: const Icon(Icons.notifications))
-            ],
+                Padding(
+                  padding: const EdgeInsets.only(left: 120),
+                  child: IconButton.outlined(
+                      iconSize: 40,
+                      onPressed: () {},
+                      icon: const Icon(
+                        Icons.notifications,
+                        color: Colors.white,
+                      )),
+                )
+              ],
+            ),
           )
         ],
       )),
