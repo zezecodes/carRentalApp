@@ -79,35 +79,72 @@ class _HomeState extends State<Home> {
                 ),
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
-                    width: 120,
+                    width: 130,
                     height: 120,
-                    decoration: BoxDecoration(color: Colors.grey[600]),
+                    decoration: BoxDecoration(
+                      color: Colors.grey[600],
+                      borderRadius: BorderRadius.circular(20),
+                    ),
                     child: const Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Icon(
+                          CupertinoIcons.car_detailed,
+                          color: Colors.yellow,
+                        ),
+                        Text(
+                          'Buy Car',
+                          style: TextStyle(color: Colors.white),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    width: 130,
+                    height: 120,
+                    clipBehavior: Clip.hardEdge,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[600],
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: const Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Icon(CupertinoIcons.car_detailed),
                         Text('Buy Car')
                       ],
                     ),
                   ),
-                  Card(
-                    color: Colors.amber,
-                    child: Column(
+                  Container(
+                    width: 130,
+                    height: 120,
+                    clipBehavior: Clip.hardEdge,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[600],
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: const Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Icon(Icons.car_rental_rounded),
+                        Icon(CupertinoIcons.car_detailed),
                         Text('Buy Car')
                       ],
                     ),
-                  ),
-                  Card(
-                    color: Colors.green,
-                    elevation: 5,
-                    child: Column(
-                      children: [Icon(Icons.car_crash), Text('Buy Car')],
-                    ),
                   )
                 ],
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 15),
+                child: Container(
+                  width: 410,
+                  height: 150,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20)),
+                ),
               )
             ],
           ),
