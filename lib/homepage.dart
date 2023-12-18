@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -68,13 +69,45 @@ class _HomeState extends State<Home> {
                   ),
                   trailing: [
                     IconButton(
-                        onPressed: () {},
-                        icon: const Icon(
-                          Icons.filter_list_outlined,
-                          color: Colors.white,
-                        ))
+                      onPressed: () {},
+                      icon: const Icon(
+                        Icons.filter_list_outlined,
+                        color: Colors.white,
+                      ),
+                    )
                   ],
                 ),
+              ),
+              Row(
+                children: [
+                  Container(
+                    width: 120,
+                    height: 120,
+                    decoration: BoxDecoration(color: Colors.grey[600]),
+                    child: const Column(
+                      children: [
+                        Icon(CupertinoIcons.car_detailed),
+                        Text('Buy Car')
+                      ],
+                    ),
+                  ),
+                  Card(
+                    color: Colors.amber,
+                    child: Column(
+                      children: [
+                        Icon(Icons.car_rental_rounded),
+                        Text('Buy Car')
+                      ],
+                    ),
+                  ),
+                  Card(
+                    color: Colors.green,
+                    elevation: 5,
+                    child: Column(
+                      children: [Icon(Icons.car_crash), Text('Buy Car')],
+                    ),
+                  )
+                ],
               )
             ],
           ),
