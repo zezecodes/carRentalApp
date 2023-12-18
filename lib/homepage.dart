@@ -10,13 +10,11 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[800],
-      body: SafeArea(
-        child: GestureDetector(
-          onTap: () {
-            FocusScope.of(context).unfocus();
-          },
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).unfocus(),
+      child: Scaffold(
+        backgroundColor: Colors.grey[700],
+        body: SafeArea(
           child: Column(
             children: [
               Row(
@@ -56,7 +54,8 @@ class _HomeState extends State<Home> {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
                 child: SearchBar(
                   elevation: MaterialStateProperty.all(3),
                   backgroundColor: MaterialStatePropertyAll(Colors.grey[800]),
