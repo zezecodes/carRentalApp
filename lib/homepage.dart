@@ -51,7 +51,21 @@ class _HomeState extends State<Home> {
                       )),
                 )
               ],
-            )
+            ),
+            SearchAnchor.bar(
+              suggestionsBuilder:
+                  (BuildContext context, SearchController controller) {
+                return List<Widget>.generate(
+                  5,
+                  (int index) {
+                    return ListTile(
+                      titleAlignment: ListTileTitleAlignment.center,
+                      title: Text('Initial list item $index'),
+                    );
+                  },
+                );
+              },
+            ),
           ],
         ),
       ),
