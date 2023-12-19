@@ -23,16 +23,6 @@ class CarCard extends StatelessWidget {
                     blurStyle: BlurStyle.normal)
               ],
               borderRadius: BorderRadius.circular(15)),
-          child: Column(children: [
-            //SEARCH CARS
-
-            //CAR ROW
-
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 40),
-              child: const CarRow(),
-            )
-          ]),
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -61,6 +51,25 @@ class CarCard extends StatelessWidget {
             ],
           ),
         ),
+        Positioned(top: 90, child: CarRow()),
+        Positioned(
+          top: -80,
+          right: 250,
+          child: Image.asset(
+            'assets/images/wagon.png.webp',
+            height: 160,
+            width: 160,
+          ),
+        ),
+        Positioned(
+          top: -50,
+          left: 220,
+          child: Image.asset(
+            'assets/images/wagon.png.webp',
+            height: 160,
+            width: 160,
+          ),
+        )
       ],
     );
   }
