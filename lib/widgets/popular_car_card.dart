@@ -9,7 +9,8 @@ class PopularCarCard extends StatelessWidget {
   const PopularCarCard({
     super.key,
     required this.carInfo,
-    required this.price, required this.car,
+    required this.price,
+    required this.car,
   });
 
   @override
