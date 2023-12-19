@@ -47,12 +47,20 @@ class CarRow extends StatelessWidget {
                       color: Colors.yellow, blurRadius: 1, spreadRadius: 2)
                 ],
               ),
-              child: const Padding(
-                padding: EdgeInsets.only(top: 40),
+              child: Padding(
+                padding: const EdgeInsets.only(top: 40),
                 child: Column(
                   children: [
-                    
-                    Text(
+                    Row(
+                      children: [
+                       GestureDetector(
+                        onTap: () {
+                          
+                        },
+                        child: Container())
+                      ],
+                    ),
+                    const Text(
                       'data',
                       textAlign: TextAlign.center,
                     ),
