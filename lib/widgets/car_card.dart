@@ -9,19 +9,21 @@ class CarCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Container(
-          width: 410,
-          height: 900,
-          decoration: BoxDecoration(
-              color: Colors.grey[800],
-              boxShadow: const [
-                BoxShadow(
-                    color: Colors.grey,
-                    blurRadius: 1,
-                    // spreadRadius: 1,
-                    blurStyle: BlurStyle.normal)
-              ],
-              borderRadius: BorderRadius.circular(15)),
+        Center(
+          child: Container(
+            width: 410,
+            height: 900,
+            decoration: BoxDecoration(
+                color: Colors.grey[800],
+                boxShadow: const [
+                  BoxShadow(
+                      color: Colors.grey,
+                      blurRadius: 1,
+                      // spreadRadius: 1,
+                      blurStyle: BlurStyle.normal)
+                ],
+                borderRadius: BorderRadius.circular(15)),
+          ),
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -53,22 +55,24 @@ class CarCard extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Container(
-              width: 180,
-              height: 200,
-              decoration: const BoxDecoration(
-                color: Colors.black,
-                border: Border(
-                  top: BorderSide(color: Colors.white),
+            Stack(alignment: Alignment.topCenter, children: [
+              Container(
+                width: 180,
+                height: 200,
+                decoration: const BoxDecoration(
+                  color: Colors.black,
+                  border: Border(
+                    top: BorderSide(color: Colors.white),
+                  ),
                 ),
+                // BackdropFilter(),
               ),
-              // BackdropFilter(),
-            ),
-            Image.asset(
-              'assets/images/m5.png',
-              width: 20,
-              height: 20,
-            ),
+              Image.asset(
+                'assets/images/m5.png',
+                width: 160,
+                height: 160,
+              ),
+            ]),
             Container(
               width: 180,
               height: 200,
