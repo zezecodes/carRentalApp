@@ -7,24 +7,26 @@ class Impl extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-          child: Stack(
+      body: Stack(
         alignment: Alignment.topCenter,
         children: [
-          Container(
-            width: 300,
-            height: 300,
-            color: Colors.amber,
+          Center(
+            child: Container(
+              width: 300,
+              height: 300,
+              color: Colors.amber,
+            ),
           ),
           Positioned(
-              top: -50,
-              child: Image.asset(
-                'assets/images/wagon.png.webp',
-                height: 90,
-                width: 90,
-              ))
+            top: 170,
+            child: Image.asset(
+              'assets/images/wagon.png.webp',
+              height: 290,
+              width: 290,
+            ),
+          )
         ],
-      )),
+      ),
     );
   }
 }
