@@ -20,17 +20,17 @@ class _HomeState extends State<Home> {
       child: Scaffold(
         resizeToAvoidBottomInset: true,
         backgroundColor: Colors.grey[700],
-        body: const SafeArea(
+        body: SafeArea(
           child: SingleChildScrollView(
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             child: Column(
               children: [
-                WelcomeCard(),
-                Padding(
+                const WelcomeCard(),
+                const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 15),
                   child: search(),
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     CarCards(),
@@ -38,19 +38,15 @@ class _HomeState extends State<Home> {
                     CarCards(),
                   ],
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsets.symmetric(vertical: 15),
                   child: BrandCard(),
                 ),
                 CarCard(
-                  image1: 'assets/images/aventador.png',
-                  image2: 'assets/images/benz.png',
-                  image3: '',
-                  image4: '',
-                  image5: '',
-                  image6: '',
-                  image7: '',
-                  image8: '',
+                  image1: Image.asset(''),
+                  image2: Image.asset(''),
+                  image3: Image.asset(''),
+                  image4: Image.asset(''),
                 ),
               ],
             ),
