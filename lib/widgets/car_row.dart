@@ -51,6 +51,7 @@ class CarRow extends StatelessWidget {
                 padding: EdgeInsets.only(top: 40),
                 child: Column(
                   children: [
+                    
                     Text(
                       'data',
                       textAlign: TextAlign.center,
