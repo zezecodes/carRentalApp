@@ -320,39 +320,40 @@ class _HomeState extends State<Home> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Stack(
-                            children: [
-                              Container(
-                                width: 180,
-                                height: 200,
-                                decoration: const BoxDecoration(
-                                  color: Colors.black,
-                                  border: Border(
-                                    top: BorderSide(color: Colors.white),
-                                  ),
-                                ),
-                                // BackdropFilter(),
-                                child: Image.asset(
-                                  'assets/images/m5.png',
-                                  width: 280,
-                                  height: 280,
-                                ),
-                              ),
-                            ],
-                          ),
-                          Container(
-                            width: 180,
-                            height: 200,
-                            decoration: const BoxDecoration(
-                              color: Colors.blue,
-                              border: Border(
-                                top: BorderSide(
-                                    color: Color.fromRGBO(66, 66, 66, 1),
-                                    width: 30),
-                              ),
-                            ),
-                            child: Image.asset('assets/images/m5.png'),
-                          )
+                          // Stack(
+                          //   children: [
+                          //     Container(
+                          //       width: 180,
+                          //       height: 200,
+                          //       decoration: const BoxDecoration(
+                          //         color: Colors.black,
+                          //         border: Border(
+                          //           top: BorderSide(color: Colors.white),
+                          //         ),
+                          //       ),
+                          //       // BackdropFilter(),
+                          //       child: Image.asset(
+                          //         'assets/images/m5.png',
+                          //         width: 280,
+                          //         height: 280,
+                          //       ),
+                          //     ),
+                          //   ],
+                          // ),
+
+                          // Container(
+                          //   width: 180,
+                          //   height: 200,
+                          //   decoration: const BoxDecoration(
+                          //     color: Colors.blue,
+                          //     border: Border(
+                          //       top: BorderSide(
+                          //           color: Color.fromRGBO(66, 66, 66, 1),
+                          //           width: 30),
+                          //     ),
+                          //   ),
+                          //   child: Image.asset('assets/images/m5.png'),
+                          // )
                         ],
                       ),
                       const Row(),
