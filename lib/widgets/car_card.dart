@@ -1,4 +1,3 @@
-import 'package:car_rental/widgets/car_row.dart';
 import 'package:car_rental/widgets/popular_car_card.dart';
 import 'package:flutter/material.dart';
 
