@@ -10,6 +10,7 @@ class CarCard extends StatelessWidget {
     return Stack(
       children: [
         Center(
+          //MAIN CONTIANER
           child: Container(
             width: 410,
             height: 900,
@@ -25,6 +26,8 @@ class CarCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(15)),
           ),
         ),
+
+        //SEARCH CARS
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: Row(
@@ -52,6 +55,8 @@ class CarCard extends StatelessWidget {
             ],
           ),
         ),
+
+        //CAR ROW
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
