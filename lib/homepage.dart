@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -31,24 +32,29 @@ class _HomeState extends State<Home> {
                         radius: 40,
                       ),
                     ),
-                    const Column(
+                    Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           'Hello, Aaron',
-                          style: TextStyle(
-                              fontSize: 20,
-                              color: Colors.yellow,
-                              fontWeight: FontWeight.bold),
+                          style: GoogleFonts.openSans(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.yellow,
+                          ),
                         ),
                         Text(
                           'Welcome Back',
-                          style: TextStyle(fontSize: 15, color: Colors.white),
+                          style: GoogleFonts.openSans(
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
                         ),
                       ],
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 140),
+                      padding: EdgeInsets.only(
+                          left: MediaQuery.of(context).size.width * 0.3),
                       child: IconButton.outlined(
                           iconSize: 30,
                           onPressed: () {},
@@ -276,7 +282,7 @@ class _HomeState extends State<Home> {
                 ),
                 Container(
                   width: 410,
-                  height: 400,
+                  height: 900,
                   decoration: BoxDecoration(
                       color: Colors.grey[800],
                       boxShadow: const [
@@ -320,43 +326,58 @@ class _HomeState extends State<Home> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          // Stack(
-                          //   children: [
-                          //     Container(
-                          //       width: 180,
-                          //       height: 200,
-                          //       decoration: const BoxDecoration(
-                          //         color: Colors.black,
-                          //         border: Border(
-                          //           top: BorderSide(color: Colors.white),
-                          //         ),
-                          //       ),
-                          //       // BackdropFilter(),
-                          //       child: Image.asset(
-                          //         'assets/images/m5.png',
-                          //         width: 280,
-                          //         height: 280,
-                          //       ),
-                          //     ),
-                          //   ],
-                          // ),
-
-                          // Container(
-                          //   width: 180,
-                          //   height: 200,
-                          //   decoration: const BoxDecoration(
-                          //     color: Colors.blue,
-                          //     border: Border(
-                          //       top: BorderSide(
-                          //           color: Color.fromRGBO(66, 66, 66, 1),
-                          //           width: 30),
-                          //     ),
-                          //   ),
-                          //   child: Image.asset('assets/images/m5.png'),
-                          // )
+                          Stack(
+                            children: [
+                              Container(
+                                width: 180,
+                                height: 200,
+                                decoration: const BoxDecoration(
+                                  color: Colors.black,
+                                  border: Border(
+                                    top: BorderSide(color: Colors.white),
+                                  ),
+                                ),
+                                // BackdropFilter(),
+                                child: Image.asset(
+                                  'assets/images/m5.png',
+                                  width: 280,
+                                  height: 280,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Container(
+                            width: 180,
+                            height: 200,
+                            decoration: const BoxDecoration(
+                              color: Colors.blue,
+                              border: Border(
+                                top: BorderSide(
+                                    color: Color.fromRGBO(66, 66, 66, 1),
+                                    width: 30),
+                              ),
+                            ),
+                            child: Image.asset('assets/images/m5.png'),
+                          )
                         ],
                       ),
-                      const Row(),
+                      Row(
+                        children: [
+                          Container(
+                            width: 180,
+                            height: 200,
+                            decoration: const BoxDecoration(
+                              color: Colors.blue,
+                              border: Border(
+                                top: BorderSide(
+                                    color: Color.fromRGBO(66, 66, 66, 1),
+                                    width: 30),
+                              ),
+                            ),
+                            child: Image.asset('assets/images/m5.png'),
+                          ),
+                        ],
+                      ),
                       const Row()
                     ],
                   ),
