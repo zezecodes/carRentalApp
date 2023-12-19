@@ -74,7 +74,7 @@ class CarCard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 160),
+              padding: EdgeInsets.symmetric(vertical: 10),
               child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
             ),
             Padding(
@@ -99,26 +99,10 @@ class CarCard extends StatelessWidget {
             ],
           ),
         ),
-        Positioned(
-          top: 60,
-          left: 30,
-          child: image1!
-        ),
-        Positioned(
-          top: 60,
-          left: 240,
-          child: image2!
-        ),
-        Positioned(
-          top: 190,
-          left: 30,
-          child: image3!
-        ),
-        Positioned(
-          top: 190,
-          left: 240,
-          child: image4!
-        ),
+        Positioned(top: 60, left: 30, child: image1!),
+        Positioned(top: 60, left: 240, child: image2!),
+        Positioned(top: 190, left: 30, child: image3!),
+        Positioned(top: 190, left: 240, child: image4!),
       ],
     );
   }
