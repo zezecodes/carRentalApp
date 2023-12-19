@@ -303,10 +303,10 @@ class _HomeState extends State<Home> {
                                   fontWeight: FontWeight.bold),
                             ),
                             ElevatedButton(
-                              style: ButtonStyle(
+                              style: const ButtonStyle(
                                   backgroundColor: MaterialStatePropertyAll(
-                                      const Color.fromRGBO(66, 66, 66, 1)),
-                                  side: const MaterialStatePropertyAll(
+                                      Color.fromRGBO(66, 66, 66, 1)),
+                                  side: MaterialStatePropertyAll(
                                       BorderSide(color: Colors.yellow))),
                               onPressed: () {},
                               child: const Text(
