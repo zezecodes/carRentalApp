@@ -26,9 +26,14 @@ class CarRow extends StatelessWidget {
               ),
               child: const Padding(
                 padding: EdgeInsets.only(top: 40),
-                child: Text(
-                  'data',
-                  textAlign: TextAlign.center,
+                child: Column(
+                  children: [
+                    ColourButtons(),
+                    Text(
+                      'data',
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -67,4 +72,3 @@ class CarRow extends StatelessWidget {
     );
   }
 }
-
