@@ -14,48 +14,7 @@ class CarRow extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Container(
-              width: 180,
-              height: 180,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color: Colors.grey[700],
-                boxShadow: const [
-                  BoxShadow(
-                      color: Colors.yellow, blurRadius: 1, spreadRadius: 2)
-                ],
-              ),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 40),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const ColourButtons(),
-                    Text(
-                      'Mercedes G63 AMG',
-                      style: GoogleFonts.openSans(
-                          fontSize: 15,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    Text(
-                      'Car info',
-                      style: GoogleFonts.openSans(
-                          fontSize: 13,
-                          color: Colors.grey[400],
-                          fontWeight: FontWeight.bold),
-                    ),
-                    Text(
-                      '\$200,000.00',
-                      style: GoogleFonts.openSans(
-                          fontSize: 15,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ],
-                ),
-              ),
-            ),
+            PopularCarCard(),
             Container(
               width: 180,
               height: 180,
@@ -89,3 +48,4 @@ class CarRow extends StatelessWidget {
     );
   }
 }
+
