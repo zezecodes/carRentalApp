@@ -53,30 +53,21 @@ class CarCard extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Stack(
-              children: [
-                Container(
-                  width: 180,
-                  height: 200,
-                  decoration: const BoxDecoration(
-                    color: Colors.black,
-                    border: Border(
-                      top: BorderSide(color: Colors.white),
-                    ),
-                  ),
-                  // BackdropFilter(),
+            Container(
+              width: 180,
+              height: 200,
+              decoration: const BoxDecoration(
+                color: Colors.black,
+                border: Border(
+                  top: BorderSide(color: Colors.white),
                 ),
-                Positioned(
-                  top: -50,
-                  bottom: 130,
-                  right: 25,
-                  child: Image.asset(
-                    'assets/images/m5.png',
-                    width: 220,
-                    height: 220,
-                  ),
-                ),
-              ],
+              ),
+              // BackdropFilter(),
+            ),
+            Image.asset(
+              'assets/images/m5.png',
+              width: 20,
+              height: 20,
             ),
             Container(
               width: 180,
