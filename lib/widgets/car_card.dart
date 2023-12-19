@@ -57,78 +57,85 @@ class CarCard extends StatelessWidget {
         ),
 
         //CAR ROW
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Stack(alignment: Alignment.topCenter, children: [
-              Container(
-                width: 180,
-                height: 200,
-                decoration: const BoxDecoration(
-                  color: Colors.black,
-                  border: Border(
-                    top: BorderSide(color: Colors.white),
+        Positioned(
+          top: 90,
+          child: Stack(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    width: 180,
+                    height: 200,
+                    decoration: const BoxDecoration(
+                      color: Colors.black,
+                      border: Border(
+                        top: BorderSide(color: Colors.white),
+                      ),
+                    ),
+                    // BackdropFilter(),
                   ),
+                  Container(
+                    width: 180,
+                    height: 200,
+                    decoration: const BoxDecoration(
+                      color: Colors.blue,
+                      border: Border(
+                        top: BorderSide(
+                            color: Color.fromRGBO(66, 66, 66, 1), width: 30),
+                      ),
+                    ),
+                    child: Image.asset('assets/images/m5.png'),
+                  )
+                ],
+              ),
+              Positioned(
+                top: -70,
+                child: Image.asset(
+                  'assets/images/m5.png',
+                  width: 160,
+                  height: 160,
                 ),
-                // BackdropFilter(),
-              ),
-              Image.asset(
-                'assets/images/m5.png',
-                width: 160,
-                height: 160,
-              ),
-            ]),
-            Container(
-              width: 180,
-              height: 200,
-              decoration: const BoxDecoration(
-                color: Colors.blue,
-                border: Border(
-                  top: BorderSide(
-                      color: Color.fromRGBO(66, 66, 66, 1), width: 30),
-                ),
-              ),
-              child: Image.asset('assets/images/m5.png'),
-            )
-          ],
+              )
+            ],
+          ),
         ),
       ],
     );
   }
 }
 
-
 // Stack(
 //             alignment: Alignment.topCenter,
 //             children: [
-              // Padding(
-              //   padding:
-              //       const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              //     children: [
-              //       const Text(
-              //         'Most Popular Cars',
-              //         style: TextStyle(
-              //             color: Colors.white,
-              //             fontSize: 18,
-              //             fontWeight: FontWeight.bold),
-              //       ),
-              //       ElevatedButton(
-              //         style: const ButtonStyle(
-              //             backgroundColor: MaterialStatePropertyAll(
-              //                 Color.fromRGBO(66, 66, 66, 1)),
-              //             side: MaterialStatePropertyAll(
-              //                 BorderSide(color: Colors.yellow))),
-              //         onPressed: () {},
-              //         child: const Text(
-              //           'See all',
-              //           style: TextStyle(color: Colors.yellow),
-              //         ),
-              //       )
-              //     ],
-              //   ),
-              // ),
+// Padding(
+//   padding:
+//       const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+//   child: Row(
+//     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//     children: [
+//       const Text(
+//         'Most Popular Cars',
+//         style: TextStyle(
+//             color: Colors.white,
+//             fontSize: 18,
+//             fontWeight: FontWeight.bold),
+//       ),
+//       ElevatedButton(
+//         style: const ButtonStyle(
+//             backgroundColor: MaterialStatePropertyAll(
+//                 Color.fromRGBO(66, 66, 66, 1)),
+//             side: MaterialStatePropertyAll(
+//                 BorderSide(color: Colors.yellow))),
+//         onPressed: () {},
+//         child: const Text(
+//           'See all',
+//           style: TextStyle(color: Colors.yellow),
+//         ),
+//       )
+//     ],
+//   ),
+// ),
 //               Positioned(
 //                 top: 100,
 //                 child: Row(
