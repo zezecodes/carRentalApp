@@ -8,26 +8,20 @@ class CarCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Center(
-          //MAIN CONTIANER
-          child: Container(
-            width: 410,
-            height: 900,
-            decoration: BoxDecoration(
-                color: Colors.grey[800],
-                boxShadow: const [
-                  BoxShadow(
-                      color: Colors.grey,
-                      blurRadius: 1,
-                      // spreadRadius: 1,
-                      blurStyle: BlurStyle.normal)
-                ],
-                borderRadius: BorderRadius.circular(15)),
-          ),
-        ),
-
+    return Container(
+      width: 410,
+      height: 900,
+      decoration: BoxDecoration(
+          color: Colors.grey[800],
+          boxShadow: const [
+            BoxShadow(
+                color: Colors.grey,
+                blurRadius: 1,
+                // spreadRadius: 1,
+                blurStyle: BlurStyle.normal)
+          ],
+          borderRadius: BorderRadius.circular(15)),
+      child: Column(children: [
         //SEARCH CARS
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -59,8 +53,8 @@ class CarCard extends StatelessWidget {
 
         //CAR ROW
 
-        CarRow()
-      ],
+        const CarRow()
+      ]),
     );
   }
 }

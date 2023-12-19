@@ -15,7 +15,7 @@ class CarRow extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
-                width: 200,
+                width: 180,
                 height: 180,
                 decoration: BoxDecoration(
                   color: Colors.grey[700],
@@ -33,7 +33,7 @@ class CarRow extends StatelessWidget {
                 ),
               ),
               Container(
-                width: 200,
+                width: 180,
                 height: 180,
                 decoration: BoxDecoration(
                   color: Colors.grey[700],
