@@ -42,14 +42,14 @@ class _HomeState extends State<Home> {
                   padding: EdgeInsets.symmetric(vertical: 15),
                   child: BrandCard(),
                 ),
-                // CarCard(
-                //   image1: 'assets/images/aventador.png',
-                //   image2: 'assets/images/benz.png',
-                // ),
                 CarCard(
-                  image1: 'assets/images/chiron.png',
-                  image2: 'assets/images/m5.png',
-                )
+                  image1: 'assets/images/aventador.png',
+                  image2: 'assets/images/benz.png',
+                ),
+                // CarCard(
+                //   image1: 'assets/images/chiron.png',
+                //   image2: 'assets/images/m5.png',
+                // )
               ],
             ),
           ),

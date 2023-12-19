@@ -1,4 +1,5 @@
 import 'package:car_rental/widgets/car_row.dart';
+import 'package:car_rental/widgets/popular_car_card.dart';
 import 'package:flutter/material.dart';
 
 class CarCard extends StatelessWidget {
@@ -59,9 +60,62 @@ class CarCard extends StatelessWidget {
             ],
           ),
         ),
+        const Row(
+          children: [
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 160),
+              child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 160),
+              child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
+            ),
+          ],
+        ),
         const Padding(
-          padding: EdgeInsets.symmetric(vertical: 160),
-          child: CarRow(),
+          padding: EdgeInsets.all(80),
+          child: Row(
+            children: [
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 160),
+                child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 160),
+                child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
+              ),
+            ],
+          ),
+        ),
+        const Padding(
+          padding: EdgeInsets.all(90),
+          child: Row(
+            children: [
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 160),
+                child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 160),
+                child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
+              ),
+            ],
+          ),
+        ),
+        const Padding(
+          padding: EdgeInsets.all(120),
+          child: Row(
+            children: [
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 160),
+                child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 160),
+                child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
+              ),
+            ],
+          ),
         ),
         Positioned(
           top: 60,
@@ -74,6 +128,24 @@ class CarCard extends StatelessWidget {
         ),
         Positioned(
           top: 60,
+          left: 240,
+          child: Image.asset(
+            image2!,
+            height: 160,
+            width: 160,
+          ),
+        ),
+        Positioned(
+          top: 190,
+          left: 30,
+          child: Image.asset(
+            image1!,
+            height: 160,
+            width: 160,
+          ),
+        ),
+        Positioned(
+          top: 190,
           left: 240,
           child: Image.asset(
             image2!,
