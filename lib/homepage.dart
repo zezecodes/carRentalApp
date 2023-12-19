@@ -331,7 +331,7 @@ class _HomeState extends State<Home> {
                                     top: BorderSide(color: Colors.white),
                                   ),
                                 ),
-                                BackdropFilter(),
+                                // BackdropFilter(),
                                 child: Image.asset(
                                   'assets/images/m5.png',
                                   width: 280,
