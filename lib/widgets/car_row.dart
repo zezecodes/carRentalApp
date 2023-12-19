@@ -1,3 +1,4 @@
+import 'package:car_rental/widgets/colour_buttons.dart';
 import 'package:flutter/material.dart';
 
 class CarRow extends StatelessWidget {
@@ -47,44 +48,12 @@ class CarRow extends StatelessWidget {
                       color: Colors.yellow, blurRadius: 1, spreadRadius: 2)
                 ],
               ),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 40),
+              child: const Padding(
+                padding: EdgeInsets.only(top: 40),
                 child: Column(
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        GestureDetector(
-                          onTap: () {},
-                          child: const CircleAvatar(
-                            radius: 15,
-                            backgroundColor: Colors.amber,
-                          ),
-                        ),
-                        GestureDetector(
-                          onTap: () {},
-                          child: const CircleAvatar(
-                            radius: 15,
-                            backgroundColor: Colors.amber,
-                          ),
-                        ),
-                        GestureDetector(
-                          onTap: () {},
-                          child: const CircleAvatar(
-                            radius: 15,
-                            backgroundColor: Colors.amber,
-                          ),
-                        ),
-                        GestureDetector(
-                          onTap: () {},
-                          child: const CircleAvatar(
-                            radius: 15,
-                            backgroundColor: Colors.amber,
-                          ),
-                        )
-                      ],
-                    ),
-                    const Text(
+                    ColourButtons(),
+                    Text(
                       'data',
                       textAlign: TextAlign.center,
                     ),
@@ -98,3 +67,4 @@ class CarRow extends StatelessWidget {
     );
   }
 }
+
