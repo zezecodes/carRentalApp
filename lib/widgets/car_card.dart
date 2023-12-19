@@ -2,24 +2,24 @@ import 'package:car_rental/widgets/popular_car_card.dart';
 import 'package:flutter/material.dart';
 
 class CarCard extends StatelessWidget {
-  final String? image1;
-  final String? image2;
-  final String? image3;
-  final String? image4;
-  final String? image5;
-  final String? image6;
-  final String? image7;
-  final String? image8;
+  final Image? image1;
+  final Image? image2;
+  final Image? image3;
+  final Image? image4;
+  final Image? image5;
+  final Image? image6;
+  final Image? image7;
+  final Image? image8;
   const CarCard({
     super.key,
     required this.image1,
     required this.image2,
     required this.image3,
     required this.image4,
-    required this.image5,
-    required this.image6,
-    required this.image7,
-    required this.image8,
+    this.image8,
+    this.image5,
+    this.image6,
+    this.image7,
   });
 
   @override
@@ -102,38 +102,22 @@ class CarCard extends StatelessWidget {
         Positioned(
           top: 60,
           left: 30,
-          child: Image.asset(
-            image1!,
-            height: 160,
-            width: 160,
-          ),
+          child: image1!
         ),
         Positioned(
           top: 60,
           left: 240,
-          child: Image.asset(
-            image2!,
-            height: 160,
-            width: 160,
-          ),
+          child: image2!
         ),
         Positioned(
           top: 190,
           left: 30,
-          child: Image.asset(
-            image1!,
-            height: 160,
-            width: 160,
-          ),
+          child: image3!
         ),
         Positioned(
           top: 190,
           left: 240,
-          child: Image.asset(
-            image2!,
-            height: 160,
-            width: 160,
-          ),
+          child: image4!
         ),
       ],
     );
