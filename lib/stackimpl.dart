@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Impl extends StatelessWidget {
@@ -12,15 +11,18 @@ class Impl extends StatelessWidget {
         children: [
           Center(
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
                   width: 200,
                   height: 180,
                   decoration: BoxDecoration(
-                      color: Colors.grey[700],
-                      boxShadow: [BoxShadow(color: Colors.yellow)]
-                     ),
+                    color: Colors.grey[700],
+                    boxShadow: const [
+                      BoxShadow(
+                          color: Colors.yellow, blurRadius: 1, spreadRadius: 2)
+                    ],
+                  ),
                   child: const Padding(
                     padding: EdgeInsets.only(top: 40),
                     child: Text(
@@ -32,7 +34,13 @@ class Impl extends StatelessWidget {
                 Container(
                   width: 200,
                   height: 180,
-                  color: Colors.blue,
+                  decoration: BoxDecoration(
+                    color: Colors.grey[700],
+                    boxShadow: const [
+                      BoxShadow(
+                          color: Colors.yellow, blurRadius: 1, spreadRadius: 2)
+                    ],
+                  ),
                   child: const Padding(
                     padding: EdgeInsets.only(top: 40),
                     child: Text(
