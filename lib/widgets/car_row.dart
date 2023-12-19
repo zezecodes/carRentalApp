@@ -12,7 +12,7 @@ class CarRow extends StatelessWidget {
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [PopularCarCard(), PopularCarCard()],
+          children: [PopularCarCard(car: '', carInfo: '', price: '',), PopularCarCard(car: '', carInfo: '', price: '',)],
         ),
       ],
     );

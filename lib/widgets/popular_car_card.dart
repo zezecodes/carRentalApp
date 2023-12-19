@@ -3,8 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class PopularCarCard extends StatelessWidget {
+  final String? car;
+  final String? carInfo;
+  final String? price;
   const PopularCarCard({
     super.key,
+    required this.carInfo,
+    required this.price, required this.car,
   });
 
   @override
@@ -29,7 +34,7 @@ class PopularCarCard extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8),
               child: Text(
-                'Mercedes G63 AMG',
+                car!,
                 style: GoogleFonts.openSans(
                     fontSize: 15,
                     color: Colors.white,
@@ -39,7 +44,7 @@ class PopularCarCard extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8),
               child: Text(
-                'Car info',
+                carInfo!,
                 style: GoogleFonts.openSans(
                     fontSize: 13,
                     color: Colors.grey[400],
@@ -49,7 +54,7 @@ class PopularCarCard extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: Text(
-                '\$200,000.00',
+                '\$$price',
                 style: GoogleFonts.openSans(
                     fontSize: 15,
                     color: Colors.white,
