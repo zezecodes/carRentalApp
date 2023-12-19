@@ -26,13 +26,31 @@ class CarRow extends StatelessWidget {
                 ],
               ),
               child: Padding(
-                padding: EdgeInsets.only(top: 40),
+                padding: const EdgeInsets.only(top: 40),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    ColourButtons(),
+                    const ColourButtons(),
                     Text(
-                      'data',
-                      style: GoogleFonts.openSans(fontSize: 18),
+                      'Mercedes G63 AMG',
+                      style: GoogleFonts.openSans(
+                          fontSize: 15,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      'Car info',
+                      style: GoogleFonts.openSans(
+                          fontSize: 13,
+                          color: Colors.grey[400],
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      '\$200,000.00',
+                      style: GoogleFonts.openSans(
+                          fontSize: 15,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
