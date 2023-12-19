@@ -2,9 +2,13 @@ import 'package:car_rental/widgets/car_row.dart';
 import 'package:flutter/material.dart';
 
 class CarCard extends StatelessWidget {
-  final String image;
+  final String? image1;
+  final String? image2;
+
   const CarCard({
-    super.key, required this.image,
+    super.key,
+    required this.image1,
+    required this.image2,
   });
 
   @override
@@ -63,7 +67,7 @@ class CarCard extends StatelessWidget {
           top: 60,
           left: 30,
           child: Image.asset(
-            image,
+            image1!,
             height: 160,
             width: 160,
           ),
@@ -72,7 +76,7 @@ class CarCard extends StatelessWidget {
           top: 60,
           left: 240,
           child: Image.asset(
-            image,
+            image2!,
             height: 160,
             width: 160,
           ),
