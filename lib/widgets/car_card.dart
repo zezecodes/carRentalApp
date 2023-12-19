@@ -53,8 +53,8 @@ class CarCard extends StatelessWidget {
         ),
         Positioned(top: 90, child: CarRow()),
         Positioned(
-          top: -80,
-          right: 250,
+          top: 10,
+          // left: 1,
           child: Image.asset(
             'assets/images/wagon.png.webp',
             height: 160,
@@ -62,7 +62,7 @@ class CarCard extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: -50,
+          top: 10,
           left: 220,
           child: Image.asset(
             'assets/images/wagon.png.webp',
