@@ -152,6 +152,42 @@ class CarCard extends StatelessWidget {
             height: 160,
             width: 160,
           ),
+        ),
+        Positioned(
+          top: 190,
+          left: 30,
+          child: Image.asset(
+            image1!,
+            height: 160,
+            width: 160,
+          ),
+        ),
+        Positioned(
+          top: 190,
+          left: 240,
+          child: Image.asset(
+            image2!,
+            height: 160,
+            width: 160,
+          ),
+        ),
+        Positioned(
+          top: 190,
+          left: 30,
+          child: Image.asset(
+            image1!,
+            height: 160,
+            width: 160,
+          ),
+        ),
+        Positioned(
+          top: 190,
+          left: 240,
+          child: Image.asset(
+            image2!,
+            height: 160,
+            width: 160,
+          ),
         )
       ],
     );
