@@ -16,13 +16,12 @@ class CarRow extends StatelessWidget {
               width: 180,
               height: 180,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15)),
+                borderRadius: BorderRadius.circular(15),
                 color: Colors.grey[700],
                 boxShadow: const [
                   BoxShadow(
                       color: Colors.yellow, blurRadius: 1, spreadRadius: 2)
                 ],
-                
               ),
               child: const Padding(
                 padding: EdgeInsets.only(top: 40),
@@ -36,6 +35,12 @@ class CarRow extends StatelessWidget {
               width: 180,
               height: 180,
               decoration: BoxDecoration(
+                borderRadius: const BorderRadius.only(
+                  bottomRight: Radius.circular(20),
+                  bottomLeft: Radius.circular(20),
+                ),
+
+                // border: const Border(top: BorderSide(width: 1)),
                 color: Colors.grey[700],
                 boxShadow: const [
                   BoxShadow(
@@ -44,9 +49,13 @@ class CarRow extends StatelessWidget {
               ),
               child: const Padding(
                 padding: EdgeInsets.only(top: 40),
-                child: Text(
-                  'data',
-                  textAlign: TextAlign.center,
+                child: Column(
+                  children: [
+                    Text(
+                      'data',
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
                 ),
               ),
             ),
