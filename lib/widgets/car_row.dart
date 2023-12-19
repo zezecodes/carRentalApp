@@ -52,12 +52,36 @@ class CarRow extends StatelessWidget {
                 child: Column(
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                       GestureDetector(
-                        onTap: () {
-                          
-                        },
-                        child: Container())
+                        GestureDetector(
+                          onTap: () {},
+                          child: const CircleAvatar(
+                            radius: 15,
+                            backgroundColor: Colors.amber,
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: () {},
+                          child: const CircleAvatar(
+                            radius: 15,
+                            backgroundColor: Colors.amber,
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: () {},
+                          child: const CircleAvatar(
+                            radius: 15,
+                            backgroundColor: Colors.amber,
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: () {},
+                          child: const CircleAvatar(
+                            radius: 15,
+                            backgroundColor: Colors.amber,
+                          ),
+                        )
                       ],
                     ),
                     const Text(
