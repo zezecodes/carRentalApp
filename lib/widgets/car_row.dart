@@ -1,5 +1,6 @@
 import 'package:car_rental/widgets/colour_buttons.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CarRow extends StatelessWidget {
   const CarRow({
@@ -24,14 +25,14 @@ class CarRow extends StatelessWidget {
                       color: Colors.yellow, blurRadius: 1, spreadRadius: 2)
                 ],
               ),
-              child: const Padding(
+              child: Padding(
                 padding: EdgeInsets.only(top: 40),
                 child: Column(
                   children: [
                     ColourButtons(),
                     Text(
                       'data',
-                      textAlign: TextAlign.center,
+                      style: GoogleFonts.openSans(fontSize: 18),
                     ),
                   ],
                 ),
@@ -45,8 +46,6 @@ class CarRow extends StatelessWidget {
                   bottomRight: Radius.circular(20),
                   bottomLeft: Radius.circular(20),
                 ),
-
-                // border: const Border(top: BorderSide(width: 1)),
                 color: Colors.grey[700],
                 boxShadow: const [
                   BoxShadow(
