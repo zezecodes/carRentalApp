@@ -10,51 +10,49 @@ class CarRow extends StatelessWidget {
     return Stack(
       alignment: Alignment.topCenter,
       children: [
-        Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                width: 180,
-                height: 180,
-                decoration: BoxDecoration(
-                  color: Colors.grey[700],
-                  boxShadow: const [
-                    BoxShadow(
-                        color: Colors.yellow, blurRadius: 1, spreadRadius: 2)
-                  ],
-                ),
-                child: const Padding(
-                  padding: EdgeInsets.only(top: 40),
-                  child: Text(
-                    'data',
-                    textAlign: TextAlign.center,
-                  ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Container(
+              width: 180,
+              height: 180,
+              decoration: BoxDecoration(
+                color: Colors.grey[700],
+                boxShadow: const [
+                  BoxShadow(
+                      color: Colors.yellow, blurRadius: 1, spreadRadius: 2)
+                ],
+              ),
+              child: const Padding(
+                padding: EdgeInsets.only(top: 40),
+                child: Text(
+                  'data',
+                  textAlign: TextAlign.center,
                 ),
               ),
-              Container(
-                width: 180,
-                height: 180,
-                decoration: BoxDecoration(
-                  color: Colors.grey[700],
-                  boxShadow: const [
-                    BoxShadow(
-                        color: Colors.yellow, blurRadius: 1, spreadRadius: 2)
-                  ],
-                ),
-                child: const Padding(
-                  padding: EdgeInsets.only(top: 40),
-                  child: Text(
-                    'data',
-                    textAlign: TextAlign.center,
-                  ),
+            ),
+            Container(
+              width: 180,
+              height: 180,
+              decoration: BoxDecoration(
+                color: Colors.grey[700],
+                boxShadow: const [
+                  BoxShadow(
+                      color: Colors.yellow, blurRadius: 1, spreadRadius: 2)
+                ],
+              ),
+              child: const Padding(
+                padding: EdgeInsets.only(top: 40),
+                child: Text(
+                  'data',
+                  textAlign: TextAlign.center,
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
         Positioned(
-          top: 290,
+          top: -80,
           right: 250,
           child: Image.asset(
             'assets/images/wagon.png.webp',
@@ -63,7 +61,7 @@ class CarRow extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 290,
+          top: -50,
           left: 220,
           child: Image.asset(
             'assets/images/wagon.png.webp',

@@ -21,39 +21,44 @@ class CarCard extends StatelessWidget {
                 blurStyle: BlurStyle.normal)
           ],
           borderRadius: BorderRadius.circular(15)),
-      child: Column(children: [
-        //SEARCH CARS
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              const Text(
-                'Most Popular Cars',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold),
-              ),
-              ElevatedButton(
-                style: const ButtonStyle(
-                    backgroundColor:
-                        MaterialStatePropertyAll(Color.fromRGBO(66, 66, 66, 1)),
-                    side: MaterialStatePropertyAll(
-                        BorderSide(color: Colors.yellow))),
-                onPressed: () {},
-                child: const Text(
-                  'See all',
-                  style: TextStyle(color: Colors.yellow),
+      child: Stack(children: [
+        Column(children: [
+          //SEARCH CARS
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+                  'Most Popular Cars',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
                 ),
-              )
-            ],
+                ElevatedButton(
+                  style: const ButtonStyle(
+                      backgroundColor: MaterialStatePropertyAll(
+                          Color.fromRGBO(66, 66, 66, 1)),
+                      side: MaterialStatePropertyAll(
+                          BorderSide(color: Colors.yellow))),
+                  onPressed: () {},
+                  child: const Text(
+                    'See all',
+                    style: TextStyle(color: Colors.yellow),
+                  ),
+                )
+              ],
+            ),
           ),
-        ),
 
-        //CAR ROW
+          //CAR ROW
 
-        const CarRow()
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 40),
+            child: const CarRow(),
+          )
+        ]),
       ]),
     );
   }
