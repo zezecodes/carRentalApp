@@ -8,58 +8,60 @@ class CarCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 410,
-      height: 900,
-      decoration: BoxDecoration(
-          color: Colors.grey[800],
-          boxShadow: const [
-            BoxShadow(
-                color: Colors.grey,
-                blurRadius: 1,
-                // spreadRadius: 1,
-                blurStyle: BlurStyle.normal)
-          ],
-          borderRadius: BorderRadius.circular(15)),
-      child: Stack(children: [
-        Column(children: [
-          //SEARCH CARS
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text(
-                  'Most Popular Cars',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold),
-                ),
-                ElevatedButton(
-                  style: const ButtonStyle(
-                      backgroundColor: MaterialStatePropertyAll(
-                          Color.fromRGBO(66, 66, 66, 1)),
-                      side: MaterialStatePropertyAll(
-                          BorderSide(color: Colors.yellow))),
-                  onPressed: () {},
-                  child: const Text(
-                    'See all',
-                    style: TextStyle(color: Colors.yellow),
-                  ),
-                )
+    return Stack(
+      children: [
+        Container(
+          width: 410,
+          height: 900,
+          decoration: BoxDecoration(
+              color: Colors.grey[800],
+              boxShadow: const [
+                BoxShadow(
+                    color: Colors.grey,
+                    blurRadius: 1,
+                    // spreadRadius: 1,
+                    blurStyle: BlurStyle.normal)
               ],
-            ),
+              borderRadius: BorderRadius.circular(15)),
+          child: Column(children: [
+            //SEARCH CARS
+
+            //CAR ROW
+
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 40),
+              child: const CarRow(),
+            )
+          ]),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                'Most Popular Cars',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold),
+              ),
+              ElevatedButton(
+                style: const ButtonStyle(
+                    backgroundColor:
+                        MaterialStatePropertyAll(Color.fromRGBO(66, 66, 66, 1)),
+                    side: MaterialStatePropertyAll(
+                        BorderSide(color: Colors.yellow))),
+                onPressed: () {},
+                child: const Text(
+                  'See all',
+                  style: TextStyle(color: Colors.yellow),
+                ),
+              )
+            ],
           ),
-
-          //CAR ROW
-
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 40),
-            child: const CarRow(),
-          )
-        ]),
-      ]),
+        ),
+      ],
     );
   }
 }
