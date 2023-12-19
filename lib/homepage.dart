@@ -50,8 +50,8 @@ class _HomeState extends State<Home> {
                   ),
                   image2: Image.asset(
                     'assets/images/ferrari.png',
-                    width: 190,
-                    height: 190,
+                    width: 250,
+                    height: 250,
                   ),
                   image3: Image.asset(
                     'assets/images/wagon.png.webp',
@@ -60,8 +60,8 @@ class _HomeState extends State<Home> {
                   ),
                   image4: Image.asset(
                     'assets/images/m5.png',
-                    width: 210,
-                    height: 210,
+                    width: 250,
+                    height: 250,
                   ),
                 ),
               ],
