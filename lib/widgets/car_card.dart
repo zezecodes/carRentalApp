@@ -1,3 +1,4 @@
+import 'package:car_rental/widgets/car_row.dart';
 import 'package:flutter/material.dart';
 
 class CarCard extends StatelessWidget {
@@ -57,49 +58,8 @@ class CarCard extends StatelessWidget {
         ),
 
         //CAR ROW
-        Positioned(
-          top: 90,
-          child: Stack(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    width: 180,
-                    height: 200,
-                    decoration: const BoxDecoration(
-                      color: Colors.black,
-                      border: Border(
-                        top: BorderSide(color: Colors.white),
-                      ),
-                    ),
-                    // BackdropFilter(),
-                  ),
-                  Container(
-                    width: 180,
-                    height: 200,
-                    decoration: const BoxDecoration(
-                      color: Colors.blue,
-                      border: Border(
-                        top: BorderSide(
-                            color: Color.fromRGBO(66, 66, 66, 1), width: 30),
-                      ),
-                    ),
-                    child: Image.asset('assets/images/m5.png'),
-                  )
-                ],
-              ),
-              Positioned(
-                top: -70,
-                child: Image.asset(
-                  'assets/images/m5.png',
-                  width: 160,
-                  height: 160,
-                ),
-              )
-            ],
-          ),
-        ),
+
+        CarRow()
       ],
     );
   }
