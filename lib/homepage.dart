@@ -1,13 +1,9 @@
-import 'dart:ui';
-
 import 'package:car_rental/widgets/brand_card.dart';
 import 'package:car_rental/widgets/car_card.dart';
 import 'package:car_rental/widgets/car_cards.dart';
 import 'package:car_rental/widgets/search.dart';
 import 'package:car_rental/widgets/welcome_card.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
