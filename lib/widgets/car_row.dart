@@ -10,6 +10,7 @@ class CarRow extends StatelessWidget {
     return Stack(
       children: [
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Container(
               width: 180,
