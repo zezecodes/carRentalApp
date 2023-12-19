@@ -43,10 +43,26 @@ class _HomeState extends State<Home> {
                   child: BrandCard(),
                 ),
                 CarCard(
-                  image1: Image.asset(''),
-                  image2: Image.asset(''),
-                  image3: Image.asset(''),
-                  image4: Image.asset(''),
+                  image1: Image.asset(
+                    'assets/images/chiron.png',
+                    width: 210,
+                    height: 210,
+                  ),
+                  image2: Image.asset(
+                    'assets/images/ferrari.png',
+                    width: 190,
+                    height: 190,
+                  ),
+                  image3: Image.asset(
+                    'assets/images/wagon.png.webp',
+                    width: 210,
+                    height: 210,
+                  ),
+                  image4: Image.asset(
+                    'assets/images/m5.png',
+                    width: 210,
+                    height: 210,
+                  ),
                 ),
               ],
             ),
