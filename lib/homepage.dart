@@ -293,7 +293,7 @@ class _HomeState extends State<Home> {
                             blurStyle: BlurStyle.normal)
                       ],
                       borderRadius: BorderRadius.circular(15)),
-                  child: Column(
+                  child: Stack(
                     children: [
                       Padding(
                         padding: const EdgeInsets.symmetric(
@@ -323,106 +323,121 @@ class _HomeState extends State<Home> {
                           ],
                         ),
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Stack(
-                            children: [
-                              Container(
-                                width: 180,
-                                height: 200,
-                                decoration: const BoxDecoration(
-                                  color: Colors.black,
-                                  border: Border(
-                                    top: BorderSide(color: Colors.white),
+                      Positioned(
+                        top: 100,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Stack(
+                              children: [
+                                Container(
+                                  width: 180,
+                                  height: 200,
+                                  decoration: const BoxDecoration(
+                                    color: Colors.black,
+                                    border: Border(
+                                      top: BorderSide(color: Colors.white),
+                                    ),
+                                  ),
+                                  // BackdropFilter(),
+                                ),
+                                Positioned(
+                                  top: -50,
+                                  bottom: 130,
+                                  right: 25,
+                                  child: Image.asset(
+                                    'assets/images/m5.png',
+                                    width: 220,
+                                    height: 220,
                                   ),
                                 ),
-                                // BackdropFilter(),
-                                child: Image.asset(
-                                  'assets/images/m5.png',
-                                  width: 280,
-                                  height: 280,
+                              ],
+                            ),
+                            Container(
+                              width: 180,
+                              height: 200,
+                              decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                border: Border(
+                                  top: BorderSide(
+                                      color: Color.fromRGBO(66, 66, 66, 1),
+                                      width: 30),
                                 ),
                               ),
-                            ],
-                          ),
-                          Container(
-                            width: 180,
-                            height: 200,
-                            decoration: const BoxDecoration(
-                              color: Colors.blue,
-                              border: Border(
-                                top: BorderSide(
-                                    color: Color.fromRGBO(66, 66, 66, 1),
-                                    width: 30),
-                              ),
-                            ),
-                            child: Image.asset('assets/images/m5.png'),
-                          )
-                        ],
+                              child: Image.asset('assets/images/m5.png'),
+                            )
+                          ],
+                        ),
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Container(
-                            width: 180,
-                            height: 200,
-                            decoration: const BoxDecoration(
-                              color: Colors.blue,
-                              border: Border(
-                                top: BorderSide(
-                                    color: Color.fromRGBO(66, 66, 66, 1),
-                                    width: 30),
+                      Positioned(
+                        top: 350,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Container(
+                              width: 180,
+                              height: 200,
+                              decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                border: Border(
+                                  top: BorderSide(
+                                      color: Color.fromRGBO(66, 66, 66, 1),
+                                      width: 30),
+                                ),
                               ),
+                              child: Image.asset('assets/images/huracan.png'),
                             ),
-                            child: Image.asset('assets/images/m5.png'),
-                          ),
-                          Container(
-                            width: 180,
-                            height: 200,
-                            decoration: const BoxDecoration(
-                              color: Colors.blue,
-                              border: Border(
-                                top: BorderSide(
-                                    color: Color.fromRGBO(66, 66, 66, 1),
-                                    width: 30),
+                            Container(
+                              width: 180,
+                              height: 200,
+                              decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                border: Border(
+                                  top: BorderSide(
+                                      color: Color.fromRGBO(66, 66, 66, 1),
+                                      width: 30),
+                                ),
                               ),
+                              child: Image.asset('assets/images/ferrari.png'),
                             ),
-                            child: Image.asset('assets/images/m5.png'),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Container(
-                            width: 180,
-                            height: 200,
-                            decoration: const BoxDecoration(
-                              color: Colors.blue,
-                              border: Border(
-                                top: BorderSide(
-                                    color: Color.fromRGBO(66, 66, 66, 1),
-                                    width: 30),
+                      Positioned(
+                        top: 450,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Container(
+                              width: 180,
+                              height: 200,
+                              decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                border: Border(
+                                  top: BorderSide(
+                                      color: Color.fromRGBO(66, 66, 66, 1),
+                                      width: 30),
+                                ),
                               ),
+                              child: Image.asset('assets/images/chiron.png'),
                             ),
-                            child: Image.asset('assets/images/m5.png'),
-                          ),
-                          Container(
-                            width: 180,
-                            height: 200,
-                            decoration: const BoxDecoration(
-                              color: Colors.blue,
-                              border: Border(
-                                top: BorderSide(
-                                    color: Color.fromRGBO(66, 66, 66, 1),
-                                    width: 30),
+                            Container(
+                              width: 180,
+                              height: 200,
+                              decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                border: Border(
+                                  top: BorderSide(
+                                      color: Color.fromRGBO(66, 66, 66, 1),
+                                      width: 30),
+                                ),
                               ),
+                              child:
+                                  Image.asset('assets/images/wagon.png.webp'),
                             ),
-                            child: Image.asset('assets/images/m5.png'),
-                          ),
-                        ],
-                      )
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 )
