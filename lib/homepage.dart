@@ -351,11 +351,7 @@ class _HomeState extends State<Home> {
                                     width: 30),
                               ),
                             ),
-                            child: Stack(
-                              children: [
-                                Image.asset('assets/images/m5.png'),
-                              ],
-                            ),
+                            child: Image.asset('assets/images/m5.png'),
                           )
                         ],
                       ),
