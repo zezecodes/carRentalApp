@@ -54,7 +54,7 @@ class CarCard extends StatelessWidget {
           ),
         ),
         const Padding(
-          padding: EdgeInsets.symmetric(vertical: 100),
+          padding: EdgeInsets.symmetric(vertical: 160),
           child: CarRow(),
         ),
         Positioned(
