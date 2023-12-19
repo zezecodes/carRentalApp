@@ -15,15 +15,16 @@ class CarCard extends StatelessWidget {
             width: 410,
             height: 900,
             decoration: BoxDecoration(
-                color: Colors.grey[800],
-                boxShadow: const [
-                  BoxShadow(
-                      color: Colors.grey,
-                      blurRadius: 1,
-                      // spreadRadius: 1,
-                      blurStyle: BlurStyle.normal)
-                ],
-                borderRadius: BorderRadius.circular(15)),
+              color: Colors.grey[800],
+              boxShadow: const [
+                BoxShadow(
+                    color: Colors.grey,
+                    blurRadius: 1,
+                    // spreadRadius: 1,
+                    blurStyle: BlurStyle.normal)
+              ],
+              borderRadius: BorderRadius.circular(15),
+            ),
           ),
         ),
         Padding(
@@ -58,8 +59,8 @@ class CarCard extends StatelessWidget {
           child: CarRow(),
         ),
         Positioned(
-          top: 10,
-          // left: 1,
+          top: 60,
+          left: 30,
           child: Image.asset(
             'assets/images/wagon.png.webp',
             height: 160,
@@ -67,8 +68,8 @@ class CarCard extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 10,
-          left: 220,
+          top: 60,
+          left: 240,
           child: Image.asset(
             'assets/images/wagon.png.webp',
             height: 160,

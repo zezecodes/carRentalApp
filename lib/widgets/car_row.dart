@@ -16,11 +16,13 @@ class CarRow extends StatelessWidget {
               width: 180,
               height: 180,
               decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15)),
                 color: Colors.grey[700],
                 boxShadow: const [
                   BoxShadow(
                       color: Colors.yellow, blurRadius: 1, spreadRadius: 2)
                 ],
+                
               ),
               child: const Padding(
                 padding: EdgeInsets.only(top: 40),
