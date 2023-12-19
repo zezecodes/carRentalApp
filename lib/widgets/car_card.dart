@@ -5,11 +5,22 @@ import 'package:flutter/material.dart';
 class CarCard extends StatelessWidget {
   final String? image1;
   final String? image2;
-
+  final String? image3;
+  final String? image4;
+  final String? image5;
+  final String? image6;
+  final String? image7;
+  final String? image8;
   const CarCard({
     super.key,
     required this.image1,
     required this.image2,
+    required this.image3,
+    required this.image4,
+    required this.image5,
+    required this.image6,
+    required this.image7,
+    required this.image8,
   });
 
   @override

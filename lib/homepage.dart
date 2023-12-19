@@ -45,11 +45,13 @@ class _HomeState extends State<Home> {
                 CarCard(
                   image1: 'assets/images/aventador.png',
                   image2: 'assets/images/benz.png',
+                  image3: '',
+                  image4: '',
+                  image5: '',
+                  image6: '',
+                  image7: '',
+                  image8: '',
                 ),
-                // CarCard(
-                //   image1: 'assets/images/chiron.png',
-                //   image2: 'assets/images/m5.png',
-                // )
               ],
             ),
           ),
