@@ -71,6 +71,7 @@ class CarCard extends StatelessWidget {
           ),
         ),
         const Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Padding(
               padding: EdgeInsets.symmetric(vertical: 160),
@@ -83,38 +84,9 @@ class CarCard extends StatelessWidget {
           ],
         ),
         const Padding(
-          padding: EdgeInsets.all(80),
+          padding: EdgeInsets.symmetric(vertical: 100),
           child: Row(
-            children: [
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 160),
-                child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 160),
-                child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
-              ),
-            ],
-          ),
-        ),
-        const Padding(
-          padding: EdgeInsets.all(90),
-          child: Row(
-            children: [
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 160),
-                child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 160),
-                child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
-              ),
-            ],
-          ),
-        ),
-        const Padding(
-          padding: EdgeInsets.all(120),
-          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 160),
@@ -163,42 +135,6 @@ class CarCard extends StatelessWidget {
             width: 160,
           ),
         ),
-        Positioned(
-          top: 190,
-          left: 30,
-          child: Image.asset(
-            image1!,
-            height: 160,
-            width: 160,
-          ),
-        ),
-        Positioned(
-          top: 190,
-          left: 240,
-          child: Image.asset(
-            image2!,
-            height: 160,
-            width: 160,
-          ),
-        ),
-        Positioned(
-          top: 190,
-          left: 30,
-          child: Image.asset(
-            image1!,
-            height: 160,
-            width: 160,
-          ),
-        ),
-        Positioned(
-          top: 190,
-          left: 240,
-          child: Image.asset(
-            image2!,
-            height: 160,
-            width: 160,
-          ),
-        )
       ],
     );
   }
