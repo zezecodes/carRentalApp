@@ -6,11 +6,15 @@ class PopularCarCard extends StatelessWidget {
   final String? car;
   final String? carInfo;
   final String? price;
+  final Color color1;
+  final Color color2;
+  final Color color3;
+  final Color color4;
   const PopularCarCard({
     super.key,
     required this.carInfo,
     required this.price,
-    required this.car,
+    required this.car, required this.color1, required this.color2, required this.color3, required this.color4,
   });
 
   @override
@@ -31,11 +35,11 @@ class PopularCarCard extends StatelessWidget {
           // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const ColourButtons(
-              color: Colors.black,
-              color2: Colors.pink,
-              color3: Colors.grey,
-              color4: Colors.yellow,
+            ColourButtons(
+              color: color1,
+              color2: color2,
+              color3: color3,
+              color4: color4,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8),
