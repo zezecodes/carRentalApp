@@ -92,7 +92,7 @@ packages:
     source: sdk
     version: "0.0.0"
   glassmorphism:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: glassmorphism
       sha256: c0f65ea2681d4ee6d4125b947946d983335cd44765e835cdc039894b076a6e31

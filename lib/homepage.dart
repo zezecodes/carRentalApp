@@ -114,7 +114,7 @@ class _HomeState extends State<Home> {
             text: 'Profile',
           ),
         ],
-      ),,
+      ),
       ),
     );
   }
