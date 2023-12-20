@@ -1,10 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CarCards extends StatelessWidget {
   final Color color;
+  final String name;
   const CarCards({
-    super.key, required this.color,
+    super.key,
+    required this.color,
+    required this.name,
   });
 
   @override
@@ -24,8 +28,9 @@ class CarCards extends StatelessWidget {
             color: color,
           ),
           Text(
-            'Buy Car',
-            style: TextStyle(color: Colors.white),
+            name,
+            style: GoogleFonts.openSans(
+                fontSize: 18, fontWeight: FontWeight.w500, color: Colors.white),
           )
         ],
       ),

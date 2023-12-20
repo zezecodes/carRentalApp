@@ -33,9 +33,18 @@ class _HomeState extends State<Home> {
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    CarCards(),
-                    CarCards(),
-                    CarCards(),
+                    CarCards(
+                      color: Colors.yellow,
+                      name: 'Buy Car',
+                    ),
+                    CarCards(
+                      color: Colors.blue,
+                      name: 'Rent a car',
+                    ),
+                    CarCards(
+                      color: Colors.green,
+                      name: 'Sell car',
+                    ),
                   ],
                 ),
                 const Padding(
