@@ -91,16 +91,30 @@ class _HomeState extends State<Home> {
             ),
           ),
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(
-                icon: Icon(CupertinoIcons.compass), label: 'Location'),
-            BottomNavigationBarItem(icon: Icon(Icons.bookmark), label: 'Save'),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile')
-          ],
-          fixedColor: Colors.black,
-        ),
+        bottomNavigationBar: GlassmorphicNavBar(
+        selectedIndex: 0, // Set the initial selected index
+        onTabChanged: (index) {
+          // Handle tab changes here
+        },
+        items: [
+          GlassmorphicNavBarItem(
+            icon: Icons.home,
+            text: 'Home',
+          ),
+          GlassmorphicNavBarItem(
+            icon: Icons.search,
+            text: 'Search',
+          ),
+          GlassmorphicNavBarItem(
+            icon: Icons.favorite,
+            text: 'Favorites',
+          ),
+          GlassmorphicNavBarItem(
+            icon: Icons.person,
+            text: 'Profile',
+          ),
+        ],
+      ),,
       ),
     );
   }
