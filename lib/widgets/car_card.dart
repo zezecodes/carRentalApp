@@ -90,19 +90,25 @@ class CarCard extends StatelessWidget {
             children: [
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 160),
-                child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
+                child: PopularCarCard(
+                    carInfo: 'A beast of an SUV ...',
+                    price: '200,000.00',
+                    car: 'Mercedes G63 AMG'),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 160),
-                child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
+                child: PopularCarCard(
+                    carInfo: '0-60 in 2.3s',
+                    price: '100,000.00',
+                    car: 'BMW F90 M550'),
               ),
             ],
           ),
         ),
         Positioned(top: 6, left: 30, child: image1!),
-        Positioned(top: -5, left: 220, child: image2!),
-        Positioned(top: 190, left: 30, child: image3!),
-        Positioned(top: 190, left: 240, child: image4!),
+        Positioned(top: -13, left: 220, child: image2!),
+        Positioned(top: 260, left: 7, child: image3!),
+        Positioned(top: 260, left: 190, child: image4!),
       ],
     );
   }
