@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         resizeToAvoidBottomInset: true,
-        backgroundColor: Colors.grey[700],
+        backgroundColor: Colors.grey[900],
         body: SafeArea(
           child: SingleChildScrollView(
             physics: const BouncingScrollPhysics(),
@@ -92,7 +92,25 @@ class _HomeState extends State<Home> {
             ),
           ),
         ),
-        bottomNavigationBar: GNav(tabs: tabs),
+        bottomNavigationBar:
+            const GNav(tabBackgroundColor: Colors.yellow, tabs: [
+          GButton(
+            icon: Icons.home,
+            text: 'Home',
+          ),
+          GButton(
+            icon: CupertinoIcons.compass,
+            text: 'Location',
+          ),
+          GButton(
+            icon: Icons.bookmark,
+            text: 'Save',
+          ),
+          GButton(
+            icon: Icons.person,
+            text: 'Settings',
+          )
+        ]),
       ),
     );
   }

@@ -9,7 +9,8 @@ class CarCards extends StatelessWidget {
   const CarCards({
     super.key,
     required this.color,
-    required this.name, required this.icon,
+    required this.name,
+    required this.icon,
   });
 
   @override
@@ -18,7 +19,7 @@ class CarCards extends StatelessWidget {
       width: 130,
       height: 120,
       decoration: BoxDecoration(
-        color: Colors.grey[600],
+        color: Colors.grey[800],
         borderRadius: BorderRadius.circular(20),
       ),
       child: Column(
