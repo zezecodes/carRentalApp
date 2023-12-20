@@ -74,7 +74,6 @@ class CarCard extends StatelessWidget {
           top: -30,
           left: 35,
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 10),
@@ -88,7 +87,7 @@ class CarCard extends StatelessWidget {
           ),
         ),
         const Padding(
-          padding: EdgeInsets.symmetric(vertical: 100),
+          padding: EdgeInsets.symmetric(vertical: 230),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
