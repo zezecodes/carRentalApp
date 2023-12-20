@@ -45,12 +45,12 @@ class _HomeState extends State<Home> {
                 CarCard(
                   image1: Image.asset(
                     'assets/images/chiron.png',
-                    width: 210,
+                    width: 160,
                     height: 210,
                   ),
                   image2: Image.asset(
                     'assets/images/ferrari.png',
-                    width: 250,
+                    width: 210,
                     height: 250,
                   ),
                   image3: Image.asset(
