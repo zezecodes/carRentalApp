@@ -99,7 +99,7 @@ class _HomeState extends State<Home> {
             BottomNavigationBarItem(icon: Icon(Icons.bookmark), label: 'Save'),
             BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile')
           ],
-          backgroundColor: Colors.black,
+          fixedColor: Colors.black,
         ),
       ),
     );
