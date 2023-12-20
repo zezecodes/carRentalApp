@@ -64,12 +64,12 @@ class _HomeState extends State<Home> {
                     height: 250,
                   ),
                   image5: Image.asset(
-                    'assets/images/f150_raptor.png',
+                    'assets/images/spectre.png',
                     width: 200,
                     height: 250,
                   ),
                   image6: Image.asset(
-                    'assets/images/spectre.png',
+                    'assets/images/f150_raptor.png',
                     width: 220,
                     height: 250,
                   ),

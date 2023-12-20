@@ -137,8 +137,8 @@ class CarCard extends StatelessWidget {
         Positioned(top: -35, left: 220, child: image2!),
         Positioned(top: 260, left: 7, child: image3!),
         Positioned(top: 260, left: 190, child: image4!),
-        Positioned(top: 520, left: 220, child: image5!),
-        Positioned(top: 520, left: 7, child: image6!)
+        Positioned(top: 530, left: 220, child: image5!),
+        Positioned(top: 530, left: 7, child: image6!)
       ],
     );
   }
