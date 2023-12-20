@@ -2,8 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CarCards extends StatelessWidget {
+  final Color color;
   const CarCards({
-    super.key,
+    super.key, required this.color,
   });
 
   @override
@@ -15,12 +16,12 @@ class CarCards extends StatelessWidget {
         color: Colors.grey[600],
         borderRadius: BorderRadius.circular(20),
       ),
-      child: const Column(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Icon(
             CupertinoIcons.car_detailed,
-            color: Colors.yellow,
+            color: color,
           ),
           Text(
             'Buy Car',
