@@ -36,15 +36,18 @@ class _HomeState extends State<Home> {
                   children: [
                     CarCards(
                       color: Colors.yellow,
-                      name: 'Buy Car', icon: CupertinoIcons.car_detailed,
+                      name: 'Buy Car',
+                      icon: CupertinoIcons.car_detailed,
                     ),
                     CarCards(
                       color: Colors.blue,
-                      name: 'Rent a car', icon: Icons.car_rental_outlined,
+                      name: 'Rent a car',
+                      icon: Icons.car_rental_outlined,
                     ),
                     CarCards(
                       color: Colors.green,
-                      name: 'Sell car', icon: Icons.car,
+                      name: 'Sell car',
+                      icon: Icons.attach_money_rounded,
                     ),
                   ],
                 ),
@@ -87,6 +90,16 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(
+                icon: Icon(CupertinoIcons.compass), label: 'Location'),
+            BottomNavigationBarItem(icon: Icon(Icons.bookmark), label: 'Save'),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile')
+          ],
+          backgroundColor: Colors.black,
         ),
       ),
     );
