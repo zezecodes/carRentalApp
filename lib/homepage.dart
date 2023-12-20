@@ -92,25 +92,28 @@ class _HomeState extends State<Home> {
             ),
           ),
         ),
-        bottomNavigationBar:
-            const GNav(tabBackgroundColor: Colors.yellow, tabs: [
-          GButton(
-            icon: Icons.home,
-            text: 'Home',
-          ),
-          GButton(
-            icon: CupertinoIcons.compass,
-            text: 'Location',
-          ),
-          GButton(
-            icon: Icons.bookmark,
-            text: 'Save',
-          ),
-          GButton(
-            icon: Icons.person,
-            text: 'Settings',
-          )
-        ]),
+        bottomNavigationBar: const GNav(
+            tabBackgroundColor: Colors.yellow,
+            color: Colors.white,
+            // backgroundColor: Colors.g,
+            tabs: [
+              GButton(
+                icon: Icons.home,
+                text: 'Home',
+              ),
+              GButton(
+                icon: CupertinoIcons.compass,
+                text: 'Location',
+              ),
+              GButton(
+                icon: Icons.bookmark,
+                text: 'Save',
+              ),
+              GButton(
+                icon: Icons.person,
+                text: 'Settings',
+              )
+            ]),
       ),
     );
   }
