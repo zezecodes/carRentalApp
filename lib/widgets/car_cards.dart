@@ -5,10 +5,11 @@ import 'package:google_fonts/google_fonts.dart';
 class CarCards extends StatelessWidget {
   final Color color;
   final String name;
+  final IconData icon;
   const CarCards({
     super.key,
     required this.color,
-    required this.name,
+    required this.name, required this.icon,
   });
 
   @override
@@ -24,13 +25,14 @@ class CarCards extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Icon(
-            CupertinoIcons.car_detailed,
+            icon,
             color: color,
+            size: 50,
           ),
           Text(
             name,
             style: GoogleFonts.openSans(
-                fontSize: 18, fontWeight: FontWeight.w500, color: Colors.white),
+                fontSize: 18, fontWeight: FontWeight.w600, color: Colors.white),
           )
         ],
       ),

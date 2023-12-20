@@ -3,6 +3,7 @@ import 'package:car_rental/widgets/car_card.dart';
 import 'package:car_rental/widgets/car_cards.dart';
 import 'package:car_rental/widgets/search.dart';
 import 'package:car_rental/widgets/welcome_card.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -35,15 +36,15 @@ class _HomeState extends State<Home> {
                   children: [
                     CarCards(
                       color: Colors.yellow,
-                      name: 'Buy Car',
+                      name: 'Buy Car', icon: CupertinoIcons.car_detailed,
                     ),
                     CarCards(
                       color: Colors.blue,
-                      name: 'Rent a car',
+                      name: 'Rent a car', icon: Icons.car_rental_outlined,
                     ),
                     CarCards(
                       color: Colors.green,
-                      name: 'Sell car',
+                      name: 'Sell car', icon: Icons.car,
                     ),
                   ],
                 ),
