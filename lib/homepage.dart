@@ -5,6 +5,7 @@ import 'package:car_rental/widgets/search.dart';
 import 'package:car_rental/widgets/welcome_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -91,30 +92,7 @@ class _HomeState extends State<Home> {
             ),
           ),
         ),
-        bottomNavigationBar: GlassmorphicNavBar(
-        selectedIndex: 0, // Set the initial selected index
-        onTabChanged: (index) {
-          // Handle tab changes here
-        },
-        items: [
-          GlassmorphicNavBarItem(
-            icon: Icons.home,
-            text: 'Home',
-          ),
-          GlassmorphicNavBarItem(
-            icon: Icons.search,
-            text: 'Search',
-          ),
-          GlassmorphicNavBarItem(
-            icon: Icons.favorite,
-            text: 'Favorites',
-          ),
-          GlassmorphicNavBarItem(
-            icon: Icons.person,
-            text: 'Profile',
-          ),
-        ],
-      ),
+        bottomNavigationBar: GNav(tabs: tabs),
       ),
     );
   }
