@@ -78,7 +78,7 @@ class CarCard extends StatelessWidget {
               child: PopularCarCard(
                   carInfo: 'Fatest in the world wai',
                   price: '2,300,300.00',
-                  car: 'Bugatti Chiron Pur Sport'),
+                  car: 'Bugatti Pur Sport'),
             ),
             Padding(
               padding: EdgeInsets.only(top: 110),
@@ -119,16 +119,16 @@ class CarCard extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 160),
                 child: PopularCarCard(
-                    carInfo: 'A beast of an SUV ...',
-                    price: '200,000.00',
-                    car: 'Mercedes G63 AMG'),
+                    carInfo: 'Pratatata!!!',
+                    price: '100,000.00',
+                    car: 'Ford F150 Raptor'),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 160),
                 child: PopularCarCard(
-                    carInfo: '0-60 in 2.3s',
-                    price: '100,000.00',
-                    car: 'BMW F90 M550'),
+                    carInfo: "Luxury + EV",
+                    price: '400,000.00',
+                    car: 'Rolls Royce Spectre'),
               ),
             ],
           ),

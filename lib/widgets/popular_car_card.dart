@@ -31,7 +31,7 @@ class PopularCarCard extends StatelessWidget {
           // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const ColourButtons(),
+            const ColourButtons(color: null, color2: null, color3: null, color4: null,),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8),
               child: Text(

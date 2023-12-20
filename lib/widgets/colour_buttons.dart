@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 
 class ColourButtons extends StatelessWidget {
+  final Color color;
+  final Color color2;
+  final Color color3;
+  final Color color4;
   const ColourButtons({
     super.key,
+    required this.color,
+    required this.color2,
+    required this.color3,
+    required this.color4,
   });
 
   @override
@@ -12,30 +20,30 @@ class ColourButtons extends StatelessWidget {
       children: [
         GestureDetector(
           onTap: () {},
-          child: const CircleAvatar(
+          child: CircleAvatar(
             radius: 15,
-            backgroundColor: Colors.amber,
+            backgroundColor: color,
           ),
         ),
         GestureDetector(
           onTap: () {},
-          child: const CircleAvatar(
+          child: CircleAvatar(
             radius: 15,
-            backgroundColor: Colors.amber,
+            backgroundColor: color2,
           ),
         ),
         GestureDetector(
           onTap: () {},
-          child: const CircleAvatar(
+          child: CircleAvatar(
             radius: 15,
-            backgroundColor: Colors.amber,
+            backgroundColor: color3,
           ),
         ),
         GestureDetector(
           onTap: () {},
-          child: const CircleAvatar(
+          child: CircleAvatar(
             radius: 15,
-            backgroundColor: Colors.amber,
+            backgroundColor: color4,
           ),
         )
       ],
