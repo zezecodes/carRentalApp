@@ -70,21 +70,18 @@ class CarCard extends StatelessWidget {
             ],
           ),
         ),
-        const Positioned(
-          top: -30,
-          left: 35,
-          child: Row(
-            children: [
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 10),
-                child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 160),
-                child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
-              ),
-            ],
-          ),
+        const Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Padding(
+              padding: EdgeInsets.only(top: 80),
+              child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 80),
+              child: PopularCarCard(carInfo: 'carInfo', price: '', car: ''),
+            ),
+          ],
         ),
         const Padding(
           padding: EdgeInsets.symmetric(vertical: 230),
